@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.main-header {
+  background: linear-gradient(135deg, #0f3d3e 0%, #17595b 100%);
+  color: white;
+  padding: 50px 20px 80px 20px;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+}
+
+.main-header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.list-page {
+  max-width: 1200px;
+  margin: -40px auto 40px auto;
+  padding: 0 20px;
+}
+
+.search {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search input {
+  width: 100%;
+  max-width: 600px;
+  padding: 18px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+  box-shadow: 0 8px 25px rgba(15, 61, 62, 0.4);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.hotel-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+}
+
+.location {
+  margin: 0 0 10px 0;
+  color: #e8a33d;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f3d3e;
+}
+
+.price small {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: normal;
+}
+
+.rating {
+  background: #0f3d3e;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background: #e8a33d;
+  color: #14211f;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #d69638;
+}
+
+.loading-text, .no-results {
+  text-align: center;
+  color: #555;
+  margin-top: 40px;
+  width: 100%;
+}
